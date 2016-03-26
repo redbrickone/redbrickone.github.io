@@ -367,7 +367,11 @@ body {
 #subtitle {
   text-decoration: none;
   color: #fff;
+<<<<<<< HEAD
   font-weight: 500;
+=======
+  font-weight: 300;
+>>>>>>> 71c54ff72491aee5cb67c859f881fac0798e009c
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 #logo {
