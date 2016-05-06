@@ -54,6 +54,6 @@ Building a polygon is not the only use of `clip-path`. You can also use the foll
   /* rounded corners... not sure if a thing anymore */
   clip-path: inset(10% 10% 10% 10% round 20%, 20%);
 ```
-###Browser Support
+### Browser Support
 Any version of Chrome, Safari and Firefox is supported, Opera is 7+, IE is 8+, Android ? and IOS is 2+
 
