@@ -4,6 +4,7 @@ date: 2016-06-20 21:51:04
 tags:
 ---
 
+
 ## DraggableViews: a HowTo
 
 Drupal views are great! However, the order in which your content prints out isn’t as easy to control. You can sort ascending or descending based on the post date, the title, etc. But what if you had a specific order you wanted them to print out? With Draggableviews you can set the order your content will print out with an easy drag-and-drop gui. Setting draggable views up is a little complex, so let’s walk through the process.
