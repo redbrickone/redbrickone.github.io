@@ -54,6 +54,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-DraggableViews-a-HowTo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    
+      <header class="article-header">
+        
+  
+    <a class="article-title" href="/2016/06/22/DraggableViews-a-HowTo/">DraggableViews: a HowTo</a>
+  
+
+      </header>
+    
+    <time class="article-date" datetime="2016-06-22T14:52:30.000Z" itemprop="datePublished">06-22-2016</time>
+    
+  </div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Drupal views are great! However, the order in which your content prints out isn’t as easy to control. You can sort ascending or descending based on the post date, the title, etc. But what if you had a specific order you wanted them to print out? With Draggableviews you can set the order your content will print out with an easy drag-and-drop gui. Setting draggable views up is a little complex, so let’s walk through the process.</p>
+<p>Let’s assume you already have a view set up…</p>
+<h3 id="Setting-up-your-Draggable-Display"><a href="#Setting-up-your-Draggable-Display" class="headerlink" title="Setting up your Draggable Display"></a>Setting up your Draggable Display</h3><ol>
+<li>Enable the module</li>
+<li>Navigate to your view <img src="http://i.imgur.com/aYdUlcE.png"></li>
+<li>Add a new Page to your view            </li>
+<li>Set a page source - I usually use something like /draggable-blog <img src="http://i.imgur.com/gAsa1Vp.png"></li>
+<li>Set your format to Table <img src="http://i.imgur.com/8PVBLzC.png"></li>
+<li>Make sure your fields includes Content: Title</li>
+<li>Add DraggableViews: Content to your fields <img src="http://i.imgur.com/W24ljWY.png"></li>
+<li>Add DraggableViews: Weight (ascending) to your sort criteria <img src="http://i.imgur.com/f5m92Lb.png">  </li>
+</ol>
+<h3 id="Setting-your-original-view-to-use-your-draggable-order"><a href="#Setting-your-original-view-to-use-your-draggable-order" class="headerlink" title="Setting your original view to use your draggable order"></a>Setting your original view to use your draggable order</h3><ol>
+<li>Navigate to your original view</li>
+<li>Add DraggableViews: Weight (ascending) to your sort criteria and remove the default sort criteria - (should be Post Date)</li>
+<li>You’ll be asked to Display Sort as: and you will select your View in the dropdown. In this case my view name is Test View: <img src="http://i.imgur.com/XgW87B8.png"></li>
+</ol>
+<p>Once you have all this setup, navigate to your /draggable page. Once you are on that page, you will see a list of your content with the draggable icon on the left side. Order them in the way you like and click save. Now your view is sorted in such a way that you can easily manage.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://chriswright.io/2016/06/22/DraggableViews-a-HowTo/" data-id="cipr02kk6000155uz6setaey7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-CSS-Attribute-Selectors" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
@@ -92,7 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://chriswright.io/2016/05/17/CSS-Attribute-Selectors/" data-id="cipqzz9sm0000luuzj0242j0f" class="article-share-link">Share</a>
+      <a data-url="http://chriswright.io/2016/05/17/CSS-Attribute-Selectors/" data-id="cipr02kjx000055uznr419av8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -145,7 +194,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://chriswright.io/2016/05/06/Fun-With-Clip-paths/" data-id="cipqzz9t20001luuzghndx799" class="article-share-link">Share</a>
+      <a data-url="http://chriswright.io/2016/05/06/Fun-With-Clip-paths/" data-id="cipr02kk7000255uzlt31gwcb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -185,7 +234,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://chriswright.io/2016/03/26/mynewblog/" data-id="cipqzz9t30002luuzslhmm2ki" class="article-share-link">Share</a>
+      <a data-url="http://chriswright.io/2016/03/26/mynewblog/" data-id="cipr02kkb000355uzgycmgdb1" class="article-share-link">Share</a>
       
       
     </footer>
