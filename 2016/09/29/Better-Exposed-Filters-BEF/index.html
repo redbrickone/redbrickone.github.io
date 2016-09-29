@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Better Exposed Filters (BEF) | chrisWright.io( )</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Better Exposed Filters (BEF)Because your filters are lame or your client wants something crazyIn Drupal Views, there are things called filters. Filters do just that, they filter content. In other word">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Better Exposed Filters (BEF)">
+<meta property="og:url" content="http://chriswright.io/2016/09/29/Better-Exposed-Filters-BEF/index.html">
+<meta property="og:site_name" content="chrisWright.io( )">
+<meta property="og:description" content="Better Exposed Filters (BEF)Because your filters are lame or your client wants something crazyIn Drupal Views, there are things called filters. Filters do just that, they filter content. In other word">
+<meta property="og:updated_time" content="2016-09-29T14:30:45.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Better Exposed Filters (BEF)">
+<meta name="twitter:description" content="Better Exposed Filters (BEF)Because your filters are lame or your client wants something crazyIn Drupal Views, there are things called filters. Filters do just that, they filter content. In other word">
+  
+    <link rel="alternative" href="/atom.xml" title="chrisWright.io( )" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">chrisWright.io( )</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="sub-nav">
+        
+          <a id="nav-home-icon" class="nav-icon" href="/"></a>
+        
+          <a id="nav-archives-icon" class="nav-icon" href="/archives"></a>
+        
+          <a id="nav-about-icon" class="nav-icon" href="/about"></a>
+        
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Better-Exposed-Filters-BEF" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Better Exposed Filters (BEF)
+    </h1>
+  
+
+      </header>
+    
+    <time class="article-date" datetime="2016-09-29T14:27:21.000Z" itemprop="datePublished">09-29-2016</time>
+    
+  </div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Better-Exposed-Filters-BEF"><a href="#Better-Exposed-Filters-BEF" class="headerlink" title="Better Exposed Filters (BEF)"></a>Better Exposed Filters (BEF)</h2><h3 id="Because-your-filters-are-lame-or-your-client-wants-something-crazy"><a href="#Because-your-filters-are-lame-or-your-client-wants-something-crazy" class="headerlink" title="Because your filters are lame or your client wants something crazy"></a>Because your filters are lame or your client wants something crazy</h3><p>In Drupal Views, there are things called filters. Filters do just that, they filter content. In other words, you can determine what content (or type of content) should be shown on your webpage. One example of this could be a site with a page for their blogs and a page for their events. Obviously, you wouldn’t want your events to show up as blogs or vice versa, which is why you would use a filter to determine that blogs go on the blogs page and the same goes for events.</p>
+<p>What if you wanted to give the visitors to your site an option to filter results even further? Say, they go to the blog page but they only want to see blogs about dogs rather than cats, which is just crazy I know but people ask for these things! In this case, you would want an “exposed filter”. An exposed filter allows the end-user to choose how they want to filter the content on the page, so instead of seeing blogs about dogs and cats, they could see one or the other with your exposed filter. An example of this could be an online store; you can filter out products that are too high or low, etc.</p>
+<p>Drupal Views comes with a basic exposed filter but it’s not very easy to use. So, in comes the module: Better Exposed Filters. Yes, it is better! It Provides a better user experience than the default option. </p>
+<h3 id="How-on-earth-do-you-use-BEF"><a href="#How-on-earth-do-you-use-BEF" class="headerlink" title="How on earth do you use BEF?"></a><strong>How on earth do you use BEF?</strong></h3><p>Allow me to show you</p>
+<h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a><strong>Prerequisites</strong></h3><p>Have a content type</p>
+<p>Have a view set up (View Page or View Block)</p>
+<h3 id="Step-1-Install-and-Enable-the-module"><a href="#Step-1-Install-and-Enable-the-module" class="headerlink" title="Step 1: Install and Enable the module"></a><strong>Step 1: Install and Enable the module</strong></h3><p>Using Drush or</p>
+<p>Install the module to <code>/modules</code> directory</p>
+<h3 id="Step-2-Taxonomy-Terms"><a href="#Step-2-Taxonomy-Terms" class="headerlink" title="Step 2: Taxonomy Terms"></a><strong>Step 2: Taxonomy Terms</strong></h3><p>Navigate to <code>Structure &gt; Taxonomy</code></p>
+<p>Add vocabulary (This will be your taxonomy grouping title)</p>
+<p>Click on “List Terms” in your new Vocabulary</p>
+<p>Add your terms (this will be the categories or terms you sort by in your view)</p>
+<h3 id="Step-3-Term-reference-field-in-your-content-type"><a href="#Step-3-Term-reference-field-in-your-content-type" class="headerlink" title="Step 3: Term reference field in your content type"></a><strong>Step 3: Term reference field in your content type</strong></h3><p>Navigate to your Content Type</p>
+<p>(If you don’t have one already) Add a field with type of “Term”</p>
+<p>It will prompt you to configure your field.</p>
+<p>Under field settings, change number of values to 1 if you don’t want them to choose multiple taxonomy terms</p>
+<p>Point the Vocabulary to your Vocabulary your just created.</p>
+<p>Save settings</p>
+<h3 id="Step-4-Create-filter-in-the-view"><a href="#Step-4-Create-filter-in-the-view" class="headerlink" title="Step 4: Create filter in the view"></a><strong>Step 4: Create filter in the view</strong></h3><p>Under Filter Criteria, Click add - “Has taxonomy term”</p>
+<p>Select your taxonomy Vocabulary</p>
+<p>Selection type should be Dropdown</p>
+<p>Expose the filter to anon users</p>
+<p>Select “Single filter” and change the filter Label to what you want or remove it</p>
+<p>Select “Is one of” and select the terms you want selected. (If all, leave terms unselected)</p>
+<h3 id="Step-5-Enable-BEF-in-the-view"><a href="#Step-5-Enable-BEF-in-the-view" class="headerlink" title="Step 5: Enable BEF in the view"></a><strong>Step 5: Enable BEF in the view</strong></h3><p>Under Exposed form, change Basic to Better Exposed Filters</p>
+<p>Check the option for “Autosubmit” and Make sure “Hide submit button” is checked as well</p>
+<p>At the bottom, you should see the your taxonomy term field. You can change it from “Default select list” to “Checkboxes”, “Links” or “Hidden”</p>
+<h3 id="Miscellaneous"><a href="#Miscellaneous" class="headerlink" title="Miscellaneous"></a><strong>Miscellaneous</strong></h3><p>“Exposed form in block: No” will add your filter(s) above your view page.</p>
+<p>“Exposed form in block: Yes” allows your to place your filters as a block wherever you want.</p>
+<p>BEF must be used with a View Page UNLESS you turn on AJAX in the advanced settings of your view. Then you can use it with your View Block</p>
+<p>However, if there is a custom <code>view.tpl.php</code>, BEF block may not work on a Block View. You will need to have a Default or normal <code>view.tpl.php</code> for your specific view for it to work.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://chriswright.io/2016/09/29/Better-Exposed-Filters-BEF/" data-id="citofs1rr0000wkuzpp18m8wg" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Drupal/">Drupal</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/22/DraggableViews-a-HowTo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">DraggableViews: a HowTo</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Chris Wright<br>
+      <a href="https://github.com/steven5538/hexo-theme-athena" target="_blank">Athena</a> by <a href="http://steven5538.tw" target="_blank">Steven5538</a> | Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
