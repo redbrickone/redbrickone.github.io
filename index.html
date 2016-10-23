@@ -54,6 +54,40 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Drupal-Gmail-Messages-Truncating" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    
+      <header class="article-header">
+        
+  
+    <a class="article-title" href="/2016/10/23/Drupal-Gmail-Messages-Truncating/">Drupal Gmail Messages Truncating</a>
+  
+
+      </header>
+    
+    <time class="article-date" datetime="2016-10-23T14:46:47.000Z" itemprop="datePublished">10-23-2016</time>
+    
+  </div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Drupal has a built-in email system that sends out emails by default. However, there are modules such as “Mimemail” that allow you to send out emails using HTML templates rather than Drupal’s default plain-text emails.</p>
+<p>Sometimes an issue can occur while using Mimemail that sends out emails in HTML format that are too large for Gmail viewers. This causes an unpleasant user experience because the email is clipped and you would have to click a link to view the entire email.<br>The email would read as follows: “[Message clipped] View entire message for gmail user” with a read more link below.<br>A client of ours was experiencing this issue, so I did some digging. I found from reading through <a href="https://www.drupal.org/node/581328" target="_blank" rel="external">this Drupal.org discussion</a> and the documentation for the MimeMail module how to fix this issue. </p>
+<p>First, you need a mail.css in the theme of your Drupal site.<br>Second, you need to enable a side that comes with MimeMail. It’s called Mime Mail CSS Compressor. What this does is convert your mail.css into inline CSS in the HTML emails MimeMail sends out. With this enabled, the Gmail truncated messages are no longer an issue.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://chriswright.io/2016/10/23/Drupal-Gmail-Messages-Truncating/" data-id="ciums1okd00051mspr67cnoqs" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Better-Exposed-Filters-BEF" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
@@ -106,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://chriswright.io/2016/09/29/Better-Exposed-Filters-BEF/" data-id="citofs1rr0000wkuzpp18m8wg" class="article-share-link">Share</a>
+      <a data-url="http://chriswright.io/2016/09/29/Better-Exposed-Filters-BEF/" data-id="ciums1ojr00001mspe360zm78" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Drupal/">Drupal</a></li></ul>
@@ -157,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://chriswright.io/2016/06/22/DraggableViews-a-HowTo/" data-id="citofs1s50004wkuzhgxasm38" class="article-share-link">Share</a>
+      <a data-url="http://chriswright.io/2016/06/22/DraggableViews-a-HowTo/" data-id="ciums1ojy00041mspncbbaqeb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -205,7 +239,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://chriswright.io/2016/05/17/CSS-Attribute-Selectors/" data-id="citofs1rw0003wkuzjvvecmji" class="article-share-link">Share</a>
+      <a data-url="http://chriswright.io/2016/05/17/CSS-Attribute-Selectors/" data-id="ciums1ojw00031msp93n2jxid" class="article-share-link">Share</a>
       
       
     </footer>
@@ -258,7 +292,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://chriswright.io/2016/05/06/Fun-With-Clip-paths/" data-id="citofs1s60005wkuzwger5ggf" class="article-share-link">Share</a>
+      <a data-url="http://chriswright.io/2016/05/06/Fun-With-Clip-paths/" data-id="ciums1okf00061mspospinhyl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -298,7 +332,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://chriswright.io/2016/03/26/mynewblog/" data-id="citofs1s80006wkuzy4t62ye0" class="article-share-link">Share</a>
+      <a data-url="http://chriswright.io/2016/03/26/mynewblog/" data-id="ciums1okf00071mspxu9qof6w" class="article-share-link">Share</a>
       
       
     </footer>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Drupal Gmail Messages Truncating | chrisWright.io( )</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Drupal has a built-in email system that sends out emails by default. However, there are modules such as “Mimemail” that allow you to send out emails using HTML templates rather than Drupal’s default p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Drupal Gmail Messages Truncating">
+<meta property="og:url" content="http://chriswright.io/2016/10/23/Drupal-Gmail-Messages-Truncating/index.html">
+<meta property="og:site_name" content="chrisWright.io( )">
+<meta property="og:description" content="Drupal has a built-in email system that sends out emails by default. However, there are modules such as “Mimemail” that allow you to send out emails using HTML templates rather than Drupal’s default p">
+<meta property="og:updated_time" content="2016-10-23T15:15:09.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Drupal Gmail Messages Truncating">
+<meta name="twitter:description" content="Drupal has a built-in email system that sends out emails by default. However, there are modules such as “Mimemail” that allow you to send out emails using HTML templates rather than Drupal’s default p">
+  
+    <link rel="alternative" href="/atom.xml" title="chrisWright.io( )" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">chrisWright.io( )</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="sub-nav">
+        
+          <a id="nav-home-icon" class="nav-icon" href="/"></a>
+        
+          <a id="nav-archives-icon" class="nav-icon" href="/archives"></a>
+        
+          <a id="nav-about-icon" class="nav-icon" href="/about"></a>
+        
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Drupal-Gmail-Messages-Truncating" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Drupal Gmail Messages Truncating
+    </h1>
+  
+
+      </header>
+    
+    <time class="article-date" datetime="2016-10-23T14:46:47.000Z" itemprop="datePublished">10-23-2016</time>
+    
+  </div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Drupal has a built-in email system that sends out emails by default. However, there are modules such as “Mimemail” that allow you to send out emails using HTML templates rather than Drupal’s default plain-text emails.</p>
+<p>Sometimes an issue can occur while using Mimemail that sends out emails in HTML format that are too large for Gmail viewers. This causes an unpleasant user experience because the email is clipped and you would have to click a link to view the entire email.<br>The email would read as follows: “[Message clipped] View entire message for gmail user” with a read more link below.<br>A client of ours was experiencing this issue, so I did some digging. I found from reading through <a href="https://www.drupal.org/node/581328" target="_blank" rel="external">this Drupal.org discussion</a> and the documentation for the MimeMail module how to fix this issue. </p>
+<p>First, you need a mail.css in the theme of your Drupal site.<br>Second, you need to enable a side that comes with MimeMail. It’s called Mime Mail CSS Compressor. What this does is convert your mail.css into inline CSS in the HTML emails MimeMail sends out. With this enabled, the Gmail truncated messages are no longer an issue.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://chriswright.io/2016/10/23/Drupal-Gmail-Messages-Truncating/" data-id="ciums1okd00051mspr67cnoqs" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/09/29/Better-Exposed-Filters-BEF/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Better Exposed Filters (BEF)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Chris Wright<br>
+      <a href="https://github.com/steven5538/hexo-theme-athena" target="_blank">Athena</a> by <a href="http://steven5538.tw" target="_blank">Steven5538</a> | Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
